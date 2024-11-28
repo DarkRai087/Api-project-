@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total size */
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+  }
+  
+  :root {
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --text-primary: #e0e0e0;
+    --accent-color: #f50057;
+    --hover-color: #9a0036;
+  }
+  
+  .navbar {
+    background-color: var(--bg-secondary);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .navbar a {
+    color: var(--text-primary);
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: var(--accent-color);
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Expands to take available space */
+  }
+  
+  .container {
+    background-color: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+  }
+ /* :root {
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --text-primary: #e0e0e0;
+    --accent-color: #03dac6;
+    --hover-color: #018786;
+}
+
+ */
+  
+  #fetch1Button {
+    margin-top:30px;
+    background-color: #f50057;
+    color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  #fetch1Button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  
+  #fetch2Button {
+    margin: 30px;
+      background-color: #bb86fc;
+      color: #e0e0e0;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+  }
+  
+  #fetch2Button:hover {
+      background-color: #3700b3;
+  }
+  #outputDiv {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #fetch3Button {
+   
+    background-color: #03dac6;
+    color:  #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+#fetch3Button:hover {
+    background-color:#018786;
+}
+  /* footer */
+  footer {
+    background-color: var(--primary);
+    padding: 20px 0;
+    text-align: center;
+    
+  }
+  
+  footer ul {
+    display: inline-grid;
+    grid-auto-flow: row;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+  }
+  
+  footer ul li {
+    color: white; /* White text for footer list items */
+    list-style: none; /* Removes default bullet points */
+  }
+  footer ul li a {
+    color: white; /* White text for the links */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s ease; /* Smooth color transition for hover effects */
+  }
+  
+  footer ul li a:hover {
+    color: var(--accent-color); /* Optional: Add hover color for better UX */
+  }
+  
+  @media (min-width: 500px) {
+    footer ul {
+        grid-auto-flow: column;
+    }
+  }
+  
+  footer li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  footer li:hover ~ li p {
+    animation: wave-animation 0.3s infinite;
+  }
+  

@@ -1,7 +1,9 @@
+/* rest css */
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Include padding and border in the element's total size */
+    box-sizing: border-box;
   }
   
   body {
@@ -20,7 +22,7 @@
     --accent-color: #f50057;
     --hover-color: #9a0036;
   }
-  
+                                  /* navbar  */
   .navbar {
     background-color: var(--bg-secondary);
     display: flex;
@@ -39,13 +41,13 @@
   .navbar a:hover {
     color: var(--accent-color);
   }
-  
+     
   .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-grow: 1; /* Expands to take available space */
+    flex-grow: 1; 
   }
   
   .container {
@@ -57,16 +59,7 @@
     max-width: 500px;
     width: 100%;
   }
- /* :root {
-    --bg-primary: #121212;
-    --bg-secondary: #1e1e1e;
-    --text-primary: #e0e0e0;
-    --accent-color: #03dac6;
-    --hover-color: #018786;
-}
-
- */
-  
+  /* buttons */
   #fetch1Button {
     margin-top:30px;
     background-color: #f50057;
@@ -99,16 +92,6 @@
   #fetch2Button:hover {
       background-color: #3700b3;
   }
-  #outputDiv {
-    margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 8px;
-    min-height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   
   #fetch3Button {
    
@@ -125,7 +108,9 @@
 #fetch3Button:hover {
     background-color:#018786;
 }
-  /* footer */
+  
+
+/* footer */
   footer {
     background-color: var(--primary);
     padding: 20px 0;

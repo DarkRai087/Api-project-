@@ -68,7 +68,7 @@ project-root/
 
 ## Author
 
-[Your GitHub Username]
+Parth pandey AKa Darkrai
 
 ## License
 

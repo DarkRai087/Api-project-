@@ -41,7 +41,7 @@
   .navbar a:hover {
     color: var(--accent-color);
   }
-     
+     /* content */
   .content {
     display: flex;
     flex-direction: column;
